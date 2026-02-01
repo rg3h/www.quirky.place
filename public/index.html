@@ -1,41 +1,24 @@
 <!doctype html> <!-- quirky.place/public/index.html -->
 <html lang="en">
 <head>
-<style>
-  @keyframes gradient-animation {
-      0% { background-position:   0% 50%; }
-     50% { background-position: 100% 50%; }
-    100% { background-position:   0% 50%; }
-  }
-
-  html {
-    height: 100%;
-    width: 100%;
-  }
-  body {
-    align-items: center;
-    animation: gradient-animation 35s ease infinite;
-    background-size: 300% 300%;
-    background: linear-gradient(111deg,#fff,#d1ffc4,#dfdfdf);
-    display: flex;
-    font-family: georgia, times new roman, courier new, verdana;
-    height: 100%;
-    justify-content: center;
-    width: 100%;
-  }
-  .largeText {
-    display: inline;
-    font-size: clamp(1rem, 2vw, 2rem);
-  }
-  .bigCap {
-    display: inline;
-    font-size: clamp(2.5rem, 5vw, 5rem);
-  }
-  .logoImg {
-    margin-right: 1rem;
-    width: clamp(5rem, 15vw, 512px);
-  }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description"                  content="a quirky website for fun"/>
+  <meta name="mobile-web-app-capable"       content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="msapplication-tap-highlight"  content="no" />
+  <meta name="theme-color"                  content="#FFCCCC">
+  <meta property="og:title"       content="quirky place">
+  <meta property="og:description" content="a quirky website for fun">
+  <meta property="og:image"       content="https://www.quirky.place/assets/images/logo.png">
+  <meta property="og:url"         content="https://www.quirky.place">
+  <link rel="icon" type="image/png" href="./assets/images/logo.png"/>
+  <link rel=stylesheet href="./modules/reset.css"/>
+  <link rel=stylesheet href="./modules/main.css"/>
+<!--
+  <link rel=stylesheet href="./assets/fonts/openSans/openSans.css"/>
+  <script type="module" src="./modules/main.js"></script>
+-->
 </head>
 <body>
 <img class=logoImg src='./assets/images/logo.png' />
