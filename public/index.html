@@ -1,16 +1,45 @@
-<html>
+<!doctype html> <!-- quirky.place/public/index.html -->
+<html lang="en">
 <head>
 <style>
+  @keyframes gradient-animation {
+      0% { background-position:   0% 50%; }
+     50% { background-position: 100% 50%; }
+    100% { background-position:   0% 50%; }
+  }
+
+  html {
+    height: 100%;
+    width: 100%;
+  }
   body {
     align-items: center;
+    animation: gradient-animation 35s ease infinite;
+    background-size: 300% 300%;
+    background: linear-gradient(111deg,#fff,#d1ffc4,#dfdfdf);
     display: flex;
-    font-family:helvetica;
+    font-family: georgia, times new roman, courier new, verdana;
     height: 100%;
     justify-content: center;
     width: 100%;
   }
+  .largeText {
+    display: inline;
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
+  .bigCap {
+    display: inline;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+  }
+  .logoImg {
+    margin-right: 1rem;
+    width: clamp(5rem, 15vw, 512px);
+  }
 </style>
 </head>
 <body>
-Welcome to quirky.place
+<img class=logoImg src='./assets/images/logo.png' />
+<div class=largeText>
+  <div class=bigCap>W</div>elcome to quirky.place
+</div>
 </body></html>
